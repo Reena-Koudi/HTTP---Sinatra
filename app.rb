@@ -26,7 +26,7 @@ get '/random-cat' do
 end
 
 get '/named-cat' do
+  p params
   @name = params[:name]
-  p "woaaah look at this: #{@name}"
   erb(:index)
 end
